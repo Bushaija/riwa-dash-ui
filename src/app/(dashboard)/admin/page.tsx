@@ -1,8 +1,9 @@
+import AdminViewPage from '@/features/admin/components/admin-view-page';
 import React from 'react'
 
 const page = () => {
   return (
-    <div>Admin page!</div>
+    <AdminViewPage />
   )
 }
 

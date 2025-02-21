@@ -4,6 +4,7 @@ import { cookies } from 'next/headers';
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import AppSidebar from "@/components/Layout/app-sidebar";
 import Header from "@/components/Layout/header";
+import KBar from "@/components/kbar";
 
 export const metadata = {
     title: 'Shift Dashboard',
@@ -20,16 +21,14 @@ export default async function RootLayout({
     const defaultOpen = cookieStore.get('sidebar:state')?.value === 'true';
 
     return(
-        <html lang="en">
-            <body>
+        <KBar>
             <SidebarProvider defaultOpen={defaultOpen}>
                 <AppSidebar />
-                    <SidebarInset>
-                    <Header />
+                <SidebarInset>
+                <Header />
                     {children}
                 </SidebarInset>
             </SidebarProvider>
-            </body>
-        </html>
+        </KBar>
     )
 }

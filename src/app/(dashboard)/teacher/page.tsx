@@ -1,7 +1,8 @@
+import TeacherViewPage from "@/features/teacher/components/teacher-view-page"
 
 const page = () => {
   return (
-    <div>Teachers page</div>
+    <TeacherViewPage />
   )
 }
 

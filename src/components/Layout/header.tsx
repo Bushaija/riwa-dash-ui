@@ -2,10 +2,10 @@ import React from 'react';
 import { SidebarTrigger } from '../ui/sidebar';
 import { Separator } from '../ui/separator';
 
-// import { Breadcrumbs } from '../breadcrumbs';
-// import SearchInput from '../search-input';
+import { Breadcrumbs } from '../breadcrumbs';
+import SearchInput from '../search-input';
 // import { UserNav } from './user-nav';
-// import ThemeToggle from './ThemeToggle/theme-toggle';
+import ThemeToggle from './ThemeToggle/theme-toggle';
 
 export default function Header() {
   return (
@@ -13,15 +13,15 @@ export default function Header() {
       <div className='flex items-center gap-2 px-4'>
         <SidebarTrigger className='-ml-1' />
         <Separator orientation='vertical' className='mr-2 h-4' />
-        {/* <Breadcrumbs /> */}
+        <Breadcrumbs />
       </div>
 
       <div className='flex items-center gap-2 px-4'>
         <div className='hidden md:flex'>
-          {/* <SearchInput /> */}
+          <SearchInput />
         </div>
         {/* <UserNav /> */}
-        {/* <ThemeToggle /> */}
+        <ThemeToggle />
       </div>
     </header>
   );

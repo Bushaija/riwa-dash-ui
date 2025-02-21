@@ -1,6 +1,8 @@
+import StudentViewPage from "@/features/student/components/student-view-page"
+
 const page = () => {
   return (
-    <div>Student page!</div>
+    <StudentViewPage />
   )
 }
 

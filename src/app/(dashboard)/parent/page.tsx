@@ -1,7 +1,8 @@
+import ParentViewPage from "@/features/parent/components/parent-view-page"
 
 const page = () => {
   return (
-    <div>Parent page!</div>
+    <ParentViewPage />
   )
 }
 
