@@ -1,6 +1,7 @@
-# Lama Dev School Management Dashboard
+# Riwa Dashboard Template
 
 ## Getting Started
+- No topbar yet
 
 First, run the development server:
 
